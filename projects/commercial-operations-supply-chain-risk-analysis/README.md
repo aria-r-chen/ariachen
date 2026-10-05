@@ -83,6 +83,16 @@ The control framework focuses on risks that can directly affect customer experie
 
 See: [controls_monitoring_framework.md](controls_monitoring_framework.md)
 
+## Illustrative Allocation & Exception Handling
+
+To show how the control framework can drive an operating decision, I added a **synthetic portfolio scenario** that converts the 40% carrier-concentration threshold into an allocation rule.
+
+The scenario starts with 1,000 last-mile shipments allocated across UPS, USPS, and a pre-qualified backup carrier. When a service KPI deteriorates, volume is reallocated while preserving the concentration limit and triggering issue escalation and remediation.
+
+This extension is deliberately labeled synthetic; it demonstrates decision logic rather than claiming access to Temu's internal allocation data.
+
+See: [illustrative_allocation_scenario.md](illustrative_allocation_scenario.md) and [illustrative_allocation_scenario.csv](illustrative_allocation_scenario.csv)
+
 ## Implementation Roadmap
 
 **Phase 1 — Validate & Pilot**
