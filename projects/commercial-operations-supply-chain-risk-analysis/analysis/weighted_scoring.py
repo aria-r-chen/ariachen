@@ -1,8 +1,10 @@
-"""Simple weighted-scoring demonstration for the Temu portfolio case.
+"""Transparent weighted-scoring demonstration for the Temu portfolio case.
 
-This script intentionally uses only Python's standard library so the logic
+The script intentionally uses only Python's standard library so the logic
 remains easy to audit and explain in an interview.
 """
+
+SELECTION_THRESHOLD = 3.5
 
 selection_weights = {
     "cross_border_capability": 0.15,
@@ -57,10 +59,12 @@ risk_categories = {
 
 
 def weighted_score(scores, weights):
+    """Return the weighted average for a score dictionary."""
     return sum(scores[key] * weights[key] for key in weights)
 
 
 def risk_level(score):
+    """Map the 1–3 weighted score to the portfolio risk bands."""
     if score <= 1.50:
         return "Low"
     if score <= 2.30:
@@ -68,13 +72,26 @@ def risk_level(score):
     return "High"
 
 
+def management_action(score):
+    """Map the risk score to a management response."""
+    level = risk_level(score)
+    if level == "Low":
+        return "Approve / standard monitoring"
+    if level == "Medium":
+        return "Conditional approval + remediation plan"
+    return "Remediate before onboarding / senior risk acceptance"
+
+
 if __name__ == "__main__":
     print("Vendor selection weighted scores")
     for name, scores in selection_scores.items():
         score = weighted_score(scores, selection_weights)
-        print(f"- {name}: {score:.2f} / 5.00")
+        result = "PASS" if score >= SELECTION_THRESHOLD else "REVIEW"
+        print(f"- {name}: {score:.2f} / 5.00 — {result}")
 
     overall_risk = sum(weight * score for weight, score in risk_categories.values())
+
     print("\nThird-party risk rating")
     print(f"- Overall weighted risk score: {overall_risk:.2f} / 3.00")
     print(f"- Risk level: {risk_level(overall_risk)}")
+    print(f"- Management action: {management_action(overall_risk)}")
