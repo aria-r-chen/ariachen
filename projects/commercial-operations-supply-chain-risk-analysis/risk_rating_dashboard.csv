@@ -1,0 +1,16 @@
+Category,Guidance Area,Weight,Average Score,Risk Level,Recommended Action
+A,Strategies and Goals,5%,1.50,Low,Approve / standard monitoring
+B,Legal and Regulatory Compliance,8%,1.50,Low,Approve / standard monitoring
+C,Financial Condition,6%,2.00,Medium,Conditional approval + remediation plan
+D,Business Experience,5%,1.00,Low,Approve / standard monitoring
+E,Key Personnel and Human Resources,4%,2.00,Medium,Conditional approval + remediation plan
+F,Risk Management,8%,2.00,Medium,Conditional approval + remediation plan
+G,Information Security,15%,2.00,Medium,Conditional approval + remediation plan
+H,Management of Information Systems,7%,2.00,Medium,Conditional approval + remediation plan
+I,Operational Resilience,12%,2.00,Medium,Conditional approval + remediation plan
+J,Incident Reporting and Management,8%,2.00,Medium,Conditional approval + remediation plan
+K,Physical Security,4%,1.00,Low,Approve / standard monitoring
+L,Reliance on Subcontractors,10%,2.50,High,Remediate before onboarding / senior risk acceptance
+M,Insurance Coverage,6%,2.00,Medium,Conditional approval + remediation plan
+N,External Contractual Commitments,2%,2.00,Medium,Conditional approval + remediation plan
+Overall,Weighted Vendor Risk Score,100%,1.90,Medium,Conditional approval + remediation plan
