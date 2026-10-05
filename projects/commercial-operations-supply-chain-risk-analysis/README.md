@@ -1,46 +1,87 @@
-# Temu Logistics: Buy vs. Build, Vendor Selection & Third-Party Risk Controls
+# Temu Logistics: Commercial Operations, Vendor Selection & Third-Party Risk
 
-## Executive Summary
+> **Portfolio case study | Columbia University academic work reconstructed for recruiting use**
 
-This portfolio case evaluates whether Temu should **build an in-house U.S. logistics network** or **buy logistics capability through third-party providers**.
+## 30-Second View
 
-The recommendation is a **conditional BUY**: use a diversified two-layer carrier model — **J&T Express / YunExpress** for cross-border line-haul and **UPS / USPS** for U.S. last-mile delivery — subject to explicit service, concentration, data-protection, and fourth-party controls.
+**Decision:** Conditionally outsource logistics through a diversified two-layer carrier portfolio rather than build a proprietary U.S. network.
 
-The analysis combines:
-- business-model and operating-model assessment
-- buy-vs.-build decision analysis
-- weighted vendor-selection scoring
-- KPI / KRI design
-- third-party due diligence and risk rating
-- confidential-data controls
-- implementation and monitoring governance
+**Operating model:**  
+- Cross-border line-haul: **J&T Express / YunExpress**
+- U.S. last-mile: **UPS / USPS**
+- Concentration control: **no single carrier >40% without senior risk acceptance**
 
-## Business Problem
+**What I built / owned:** TPRM risk & control analysis, confidential-data governance, public-source research for those sections, cross-workstream integration, most of the final presentation build, and the final management synthesis. I also independently built a separate third-party risk-rating dashboard.
 
-Temu's asset-light model creates a strategic trade-off:
+**Why this matters for analyst roles:** the project connects business strategy, vendor selection, operational KPIs, exception handling, risk controls, and management action.
 
-**Build:** own logistics infrastructure, fleets, facilities, systems, staffing, and operating complexity.
+## Decision Flow
 
-**Buy:** leverage existing logistics providers for faster market access, variable-cost capacity, and specialist expertise — while accepting third-party execution, concentration, data, compliance, and subcontractor risk.
+```mermaid
+flowchart LR
+    A[Business Need] --> B{Buy or Build?}
+    B -->|Buy| C[Select Carrier Portfolio]
+    C --> D[Score Service / Cost / Resilience / Control Factors]
+    D --> E[Contract & Due Diligence Controls]
+    E --> F[Pilot & KPI/KRI Monitoring]
+    F --> G{Threshold Breach?}
+    G -->|No| H[Scale / Renew]
+    G -->|Yes| I[Reallocate / Escalate / Remediate]
+    I --> F
+```
 
-The objective is not to eliminate risk. It is to choose the operating model with the best strategic fit and then make the residual risk governable.
+## Key Results
 
-## Decision Framework
+| Analysis | Result | Management Meaning |
+|---|---|---|
+| Buy vs. Build | **Conditional BUY** | Faster market access, lower fixed-capital exposure, specialist logistics capability |
+| Cross-border group score | **3.9 / 5** | Clears 3.5 selection threshold |
+| U.S. last-mile group score | **4.3 / 5** | Strong fit for domestic coverage / reliability |
+| Independent vendor-risk model | **1.90 / 3 — Medium** | Conditional approval + remediation |
+| Highest modeled risk | **Subcontractor reliance: 2.50 / 3** | Requires stronger fourth-party visibility and controls |
+| Concentration control | **40% carrier cap** | Prevents uncontrolled dependency and supports reallocation |
 
-### 1. Buy vs. Build
+## Portfolio Artifacts
+
+| Artifact | What it Shows |
+|---|---|
+| [Vendor Selection Scorecard](vendor_selection_scorecard.csv) | Weighted decision logic across eight criteria |
+| [Third-Party Risk Rating Dashboard Data](risk_rating_dashboard.csv) | Category weights, risk scores, risk levels, management actions |
+| [Controls & Monitoring Framework](controls_monitoring_framework.md) | Controls, KRIs, escalation logic, governance cadence |
+| [Illustrative Allocation Scenario](illustrative_allocation_scenario.md) | How KPI deterioration can drive reallocation and escalation |
+| [Allocation Scenario Data](illustrative_allocation_scenario.csv) | Before/after allocation under a 40% concentration constraint |
+| [Weighted Scoring Python Demo](analysis/weighted_scoring.py) | Transparent reproduction of the scoring logic in basic Python |
+| [Methodology](methodology.md) | Scoring formulas, thresholds, decision rules |
+| [Assumptions & Limitations](assumptions_and_limitations.md) | What is academic, reconstructed, synthetic, or source-dependent |
+
+---
+
+## 1. Business Problem
+
+Temu's asset-light model creates a strategic trade-off.
+
+**BUILD** would mean owning logistics infrastructure, fleets, facilities, systems, staffing, and the associated operating complexity.
+
+**BUY** would leverage established logistics providers for faster market access, variable-cost capacity, and specialist expertise — while creating third-party execution, concentration, data, compliance, and subcontractor risk.
+
+The objective is therefore not to eliminate risk. It is to select the operating model with the best strategic fit and make the residual risk measurable, controllable, and governable.
+
+## 2. Buy vs. Build
 
 The BUY case is stronger on:
 - capital discipline
 - speed to market
-- flexibility during promotions and peak demand
+- flexibility during promotions and demand spikes
 - access to logistics and customs expertise
-- management focus on Temu's core marketplace capabilities
+- management focus on core marketplace capabilities
 
-The BUILD case offers more direct control, but requires significant fixed investment and exposes Temu to asset-utilization, labor, safety, insurance, technology, and transportation complexity.
+The BUILD case offers more direct control, but requires significant fixed investment and exposes the company to asset-utilization, labor, safety, insurance, technology, and transportation complexity.
 
-### 2. Vendor Selection
+**Recommendation:** BUY, but only with defined due diligence, contractual controls, risk acceptance, and ongoing monitoring.
 
-The academic case used eight weighted criteria and a 3.5 / 5 selection threshold.
+## 3. Vendor Selection
+
+The academic case used eight weighted criteria and a **3.5 / 5 selection threshold**.
 
 | Criterion | Weight | Cross-Border Group | U.S. Last-Mile Group |
 |---|---:|---:|---:|
@@ -54,50 +95,63 @@ The academic case used eight weighted criteria and a 3.5 / 5 selection threshold
 | Resilience | 10% | 4 | 5 |
 | **Weighted total** | **100%** | **3.9** | **4.3** |
 
-The two-layer structure assigns providers to the lane where they are strongest rather than relying on one carrier for the full chain.
+The two-layer structure assigns providers to the lane where they are strongest instead of forcing one carrier to do everything.
 
-See: [vendor_selection_scorecard.csv](vendor_selection_scorecard.csv)
+## 4. Independent Third-Party Risk Rating Model
 
-## Independent Third-Party Risk Rating Model
+As a separate **individual assignment**, I built a structured third-party risk rating dashboard using:
+- a 1–3 risk scale
+- risk-based category weights
+- 20 due-diligence questions
+- evidence / notes fields
+- weighted scoring
+- management-action mapping
 
-As a separate individual assignment, I built a structured third-party risk rating dashboard using a 1–3 risk scale, category weights, due-diligence questions, evidence notes, weighted scoring, and management actions.
+**Overall weighted score:** **1.90 / 3.00 — Medium Risk**  
+**Management action:** **Conditional approval + remediation plan**
 
-**Overall weighted score: 1.90 / 3.00 — Medium Risk**
+The highest-risk category was **Reliance on Subcontractors (2.50 / 3 — High)**, which reinforces the need for:
+- fourth-party inventory
+- approval rights
+- contractual flow-down
+- auditability
+- incident reporting
+- remediation before scale-up
 
-**Management action: Conditional approval + remediation plan**
+## 5. Controls & Monitoring
 
-The highest-risk area in the model was **Reliance on Subcontractors**, reinforcing the importance of fourth-party visibility, approval rights, contractual flow-down, and auditability.
+The control framework focuses on risks that can directly affect customer experience, continuity, data protection, and regulatory exposure.
 
-See: [risk_rating_dashboard.csv](risk_rating_dashboard.csv)
-
-## Key Controls & Monitoring
-
-The control framework focuses on risks that can directly affect customer experience, business continuity, data protection, and regulatory exposure.
-
-- **Operational / service risk:** SLA commitments, on-time delivery, loss/damage rate, peak-capacity requirements, route contingency, backup-carrier readiness.
-- **Data privacy & confidentiality:** data minimization, DPA, encryption, role-based access, logging, no secondary use, deletion / return at offboarding, 24-hour incident notification.
-- **Regulatory / customs risk:** compliance attestations, documentation standards, audit rights, regulatory-change notification.
-- **Concentration risk:** no single carrier above 40% of parcel volume without senior risk acceptance.
-- **Fourth-party risk:** subcontractor inventory, approval rights, contractual flow-down, audit rights, incident reporting.
+- **Operational / service:** on-time delivery SLAs, loss/damage thresholds, peak-capacity commitments, route contingency, backup-carrier readiness.
+- **Data privacy & confidentiality:** data minimization, DPA, encryption, role-based access, logging, no secondary use, deletion / return, 24-hour incident notification.
+- **Regulatory / customs:** compliance attestations, documentation standards, audit rights, regulatory-change notification.
+- **Concentration:** no single carrier above 40% of parcel volume without senior risk acceptance.
+- **Fourth-party / subcontractor:** inventory, approval rights, contractual flow-down, audit rights, incident reporting.
 - **Ongoing monitoring:** monthly KPI / KRI review, issue escalation, annual reassessment, renew / remediate / replace decisions.
 
-See: [controls_monitoring_framework.md](controls_monitoring_framework.md)
+## 6. Illustrative Allocation & Exception Handling
 
-## Illustrative Allocation & Exception Handling
+To connect the risk framework to day-to-day operations, I added a **synthetic portfolio scenario**.
 
-To show how the control framework can drive an operating decision, I added a **synthetic portfolio scenario** that converts the 40% carrier-concentration threshold into an allocation rule.
+A planning batch of 1,000 last-mile shipments is allocated across UPS, USPS, and a pre-qualified backup carrier while respecting the 40% concentration threshold.
 
-The scenario starts with 1,000 last-mile shipments allocated across UPS, USPS, and a pre-qualified backup carrier. When a service KPI deteriorates, volume is reallocated while preserving the concentration limit and triggering issue escalation and remediation.
+When an on-time-delivery KPI deteriorates:
+1. detect the threshold breach,
+2. validate the signal,
+3. stop increasing exposure,
+4. reallocate volume within concentration limits,
+5. open an issue with an owner and remediation date,
+6. restore volume only after acceptable performance evidence.
 
-This extension is deliberately labeled synthetic; it demonstrates decision logic rather than claiming access to Temu's internal allocation data.
+This turns a control statement into an operating rule:
 
-See: [illustrative_allocation_scenario.md](illustrative_allocation_scenario.md) and [illustrative_allocation_scenario.csv](illustrative_allocation_scenario.csv)
+**KPI deterioration → allocation change → escalation → remediation → controlled restoration**
 
-## Implementation Roadmap
+## 7. Implementation Roadmap
 
 **Phase 1 — Validate & Pilot**
 - complete due diligence
-- negotiate SLAs, data and audit controls
+- negotiate SLAs, data, audit, subcontractor, and incident controls
 - pilot selected logistics lanes
 - validate delivery performance and customer experience
 
@@ -113,27 +167,21 @@ See: [illustrative_allocation_scenario.md](illustrative_allocation_scenario.md) 
 - annual risk reassessment
 - remediation, renewal, or replacement decisions
 
-## My Contribution
+## My Contribution & Project Provenance
 
-The original Temu case was developed as a six-person Columbia University team project.
+The original Temu case was developed as a **six-person Columbia University team project**.
 
-My primary ownership was:
-- TPRM risk and control assessment
-- confidential-data handling and governance analysis
-- public-source research supporting those sections
-- integration and coordination across team workstreams
-- design and construction of most of the final presentation
-- synthesis of the final management recommendation
+My primary contribution was:
+- owning the TPRM risk & control assessment
+- owning the confidential-data handling and governance analysis
+- conducting public-source research supporting those sections
+- coordinating and integrating team workstreams
+- designing and building most of the final presentation
+- synthesizing the final management recommendation
 
-I also completed the companion third-party risk rating dashboard as an **independent individual assignment**.
+I also completed the companion third-party risk-rating dashboard as an **independent individual assignment**.
 
-The course permitted and expected AI-assisted work. AI was used as a support tool during the academic project; final source selection, risk judgment, framework integration, presentation design, and management conclusions were reviewed and owned by me.
-
-## Portfolio Reconstruction
-
-This repository is an **independent portfolio reconstruction** of academic work. It does not reproduce teammates' personal information or present team contributions as solely mine.
-
-Some business-value figures from the classroom deck are intentionally omitted here because they require source-level validation before being presented as decision-grade facts.
+The course explicitly permitted and expected AI-assisted work. AI was used as a support tool; final source selection, risk judgment, framework integration, presentation design, and management conclusions were reviewed and owned by me.
 
 ## Skills Demonstrated
 
@@ -142,6 +190,7 @@ Some business-value figures from the classroom deck are intentionally omitted he
 - weighted scoring
 - KPI / KRI design
 - vendor performance monitoring
+- allocation / exception logic
 - operating-model evaluation
 - implementation planning
 
@@ -152,7 +201,8 @@ Some business-value figures from the classroom deck are intentionally omitted he
 - concentration risk
 - fourth-party risk
 - confidential-data governance
-- issue escalation and residual-risk acceptance
+- issue escalation
+- residual-risk acceptance
 
 **Tools**
 - Excel / spreadsheet modeling
@@ -162,8 +212,23 @@ Some business-value figures from the classroom deck are intentionally omitted he
 - Java (coursework)
 - R (coursework)
 
+## Reproducibility
+
+The Python file under `analysis/` reproduces the weighted-selection scores and the independent risk-rating result using transparent inputs and standard-library Python only.
+
+This is intentionally simple: the purpose is auditability and interview explainability, not to present the project as a software-engineering exercise.
+
 ## Sources & Scope
 
-The academic case used course materials and public sources including PDD Holdings filings, UPS and USPS public materials, the 2023 Interagency Guidance on Third-Party Relationships, and other public references.
+The academic case used course materials and public sources including:
+- PDD Holdings public filings
+- UPS public materials
+- USPS public materials
+- 2023 Interagency Guidance on Third-Party Relationships
+- other public academic / regulatory references used in the course work
 
-This is a portfolio case study for analytical demonstration, not investment advice, legal advice, or an assertion of Temu's actual internal vendor contracts, allocation percentages, or control environment.
+This repository is an **independent portfolio reconstruction** of academic work. It does not publish teammates' personal information or represent team contributions as solely mine.
+
+Some classroom business-value figures are intentionally omitted because they require source-level validation before being presented as decision-grade facts.
+
+This case is for analytical demonstration and does not claim access to Temu's internal vendor contracts, actual carrier allocation, or control environment.
