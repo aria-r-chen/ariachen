@@ -1,50 +1,59 @@
-# Hi, I'm Aria Chen
+# Aria Chen
 
-I'm an M.S. candidate in Enterprise Risk Management at Columbia University with a background in finance, business operations, analytics, and risk.
+**M.S. Enterprise Risk Management @ Columbia University | Commercial Operations · Business Analytics · Strategy & Operations · Risk & Controls**
 
-My strongest work sits at the intersection of:
+I build structured, decision-ready analysis at the intersection of **operations, data, and risk** — especially where vendor performance, process design, controls, and management decisions meet.
 
-- Commercial Operations
-- Business & Supply Chain Analytics
-- Strategy & Operations
-- Third-Party Risk & Controls
-- Healthcare, MedTech, and Medical Aesthetics
+## Featured Work
 
-I focus on turning business, operational, and risk information into clear management decisions.
+### Temu Logistics — Commercial Operations, Vendor Selection & Third-Party Risk
 
-## Featured Project
+A portfolio reconstruction of Columbia University academic work evaluating whether Temu should build a proprietary U.S. logistics network or outsource through a diversified carrier model.
 
-### Temu Logistics — Buy vs. Build, Vendor Selection & Third-Party Risk Controls
-
-A recruiter-facing portfolio reconstruction of a Columbia University logistics and third-party risk case.
-
-The project demonstrates:
-
+**What it demonstrates**
 - Buy-vs.-build decision analysis
 - Weighted vendor selection
 - KPI / KRI design
 - Third-party due diligence and risk rating
 - Confidential-data controls
-- Concentration and fourth-party risk
-- Implementation and monitoring governance
+- Concentration / fourth-party risk
+- Allocation and exception-handling logic
+- Management recommendation and implementation roadmap
 
-**Project:** [Commercial Operations & Supply Chain Risk Analysis](projects/commercial-operations-supply-chain-risk-analysis/README.md)
+**Key outputs**
+- Vendor selection: **3.9 / 5 cross-border** and **4.3 / 5 U.S. last-mile**
+- Independent third-party risk model: **1.90 / 3 — Medium**
+- Management action: **Conditional approval + remediation**
+- Operating control: **40% single-carrier concentration cap**
 
-## Current Focus
+➡️ **[View the full project](projects/commercial-operations-supply-chain-risk-analysis/README.md)**
 
-I'm building practical work samples around:
+## What I Bring
 
-- Commercial performance and KPI analysis
-- Supply-chain and vendor decision support
-- Strategy & operations
-- Third-party risk and operational resilience
-- Management reporting and scenario analysis
-- Healthcare / MedTech business operations
+- **Operations + Data:** KPI reporting, structured analysis, process improvement, scenario thinking, management-ready recommendations
+- **Risk + Controls:** TPRM, operational risk, control design, issue escalation, residual-risk acceptance
+- **Cross-functional execution:** project coordination, executive presentations, stakeholder communication
 
 ## Tools
 
-Excel (PivotTables, Power Query, XLOOKUP/VLOOKUP, IF/SUMIFS, dashboards) · PowerPoint · Google Sheets · Python (coursework) · Java (coursework) · R (coursework) · NVivo
+**Advanced Excel:** PivotTables · Power Query · XLOOKUP / VLOOKUP · IF / SUMIFS · data cleaning · dashboards  
+**Other:** PowerPoint · Google Sheets · NVivo  
+**Programming coursework:** Python · Java · R
 
-## Career Interests
+## Current Direction
 
-Commercial Operations · Business Analytics · Strategy & Operations · S&OP / Demand Planning · Enterprise Risk · Risk & Controls · Third-Party Risk · Healthcare · MedTech · Medical Aesthetics
+I'm targeting early-career opportunities in:
+
+**Commercial Operations · Business Analytics · Strategy & Operations · S&OP / Demand Planning · Enterprise Risk · Risk & Controls · Third-Party Risk**
+
+with particular interest in **Healthcare, MedTech, Medical Aesthetics, Consumer Health, and science-based products**.
+
+## Education
+
+**Columbia University** — M.S. Enterprise Risk Management, expected Dec 2026  
+**University of Nottingham Ningbo China** — B.Sc. (Hons), Finance, Accounting & Management
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/aria-chen-erm
+- Email: rc3840@columbia.edu
