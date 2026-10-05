@@ -1,0 +1,5 @@
+Carrier,Role,Baseline Shipments,Baseline Share,Post-Exception Shipments,Post-Exception Share,Change
+UPS,Primary commercial / urban carrier,400,40%,200,20%,-200
+USPS,Primary universal-access carrier,400,40%,400,40%,0
+Backup Carrier X,Pre-qualified contingency capacity,200,20%,400,40%,200
+Total,,1000,100%,1000,100%,0
