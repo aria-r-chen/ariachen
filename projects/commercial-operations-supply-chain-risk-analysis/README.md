@@ -212,9 +212,17 @@ The course explicitly permitted and expected AI-assisted work. AI was used as a 
 - Java (coursework)
 - R (coursework)
 
-## Reproducibility
+## Reproducibility & Validation
 
 The Python file under `analysis/` reproduces the weighted-selection scores and the independent risk-rating result using transparent inputs and standard-library Python only.
+
+**Validation path:**
+- [Scoring model](analysis/weighted_scoring.py)
+- [Regression tests](analysis/test_weighted_scoring.py)
+- [Analysis run guide](analysis/README.md)
+- [GitHub Actions validation](../../../../actions/workflows/portfolio-validation.yml)
+
+The current regression suite checks the published 3.90 / 5 and 4.30 / 5 selection scores, verifies that both sets of weights sum to 100%, validates the raw **1.895** third-party risk score and its displayed **1.90** value, and tests the risk-band boundaries.
 
 This is intentionally simple: the purpose is auditability and interview explainability, not to present the project as a software-engineering exercise.
 
