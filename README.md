@@ -2,7 +2,20 @@
 
 **Columbia University · M.S. in Enterprise Risk Management · Expected December 2026**
 
+[![Portfolio Validation](https://github.com/aria-r-chen/ariachen/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/aria-r-chen/ariachen/actions/workflows/portfolio-validation.yml)
+
 I focus on translating complex **business, operational, and third-party risks** into structured analysis, practical controls, and decision-ready recommendations. I am interested in early-career **risk management, strategy, business operations, and consulting** roles, especially in healthcare, medical devices, technology, and other operating businesses.
+
+## Recruiter Quick Scan
+
+If you have two minutes:
+
+1. **Business judgment:** review the [case-study decision and key results](projects/commercial-operations-supply-chain-risk-analysis/README.md#30-second-view).
+2. **Risk & controls:** inspect the [controls and monitoring framework](projects/commercial-operations-supply-chain-risk-analysis/controls_monitoring_framework.md).
+3. **Analytical evidence:** review the [weighted scoring model](projects/commercial-operations-supply-chain-risk-analysis/analysis/weighted_scoring.py) and its [regression tests](projects/commercial-operations-supply-chain-risk-analysis/analysis/test_weighted_scoring.py).
+4. **Method discipline:** see [methodology](projects/commercial-operations-supply-chain-risk-analysis/methodology.md) and [assumptions / limitations](projects/commercial-operations-supply-chain-risk-analysis/assumptions_and_limitations.md).
+
+The portfolio is designed to show **how I structure decisions, quantify risk, translate analysis into controls, and communicate a management recommendation**.
 
 ## Featured Project · Temu Logistics Strategy and Third-Party Risk
 
