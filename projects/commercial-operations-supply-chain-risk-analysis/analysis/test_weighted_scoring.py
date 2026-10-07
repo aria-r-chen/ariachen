@@ -42,7 +42,8 @@ class WeightedScoringTests(unittest.TestCase):
 
     def test_independent_risk_model_score(self):
         overall = sum(weight * score for weight, score in risk_categories.values())
-        self.assertAlmostEqual(overall, 1.90)
+        self.assertAlmostEqual(overall, 1.895)
+        self.assertEqual(f"{overall:.2f}", "1.90")
         self.assertEqual(risk_level(overall), "Medium")
         self.assertEqual(
             management_action(overall),
