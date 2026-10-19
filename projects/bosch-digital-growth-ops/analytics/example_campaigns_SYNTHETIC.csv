@@ -1,0 +1,4 @@
+record_type,campaign_id,platform,views,inquiries,qualified_leads,completed_sales,spend_cny
+SYNTHETIC,DEMO_A,platform_A,10000,60,33,7,500
+SYNTHETIC,DEMO_B,platform_B,8000,45,28,5,300
+SYNTHETIC,DEMO_C,platform_A,12000,70,40,9,600
