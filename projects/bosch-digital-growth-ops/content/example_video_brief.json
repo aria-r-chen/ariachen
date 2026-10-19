@@ -1,0 +1,36 @@
+{
+  "status": "SYNTHETIC EXAMPLE - NOT AN ACTUAL AD",
+  "campaign_id": "DEMO_001",
+  "platform": "short_video_generic",
+  "audience": "Households comparing a replacement heating boiler",
+  "customer_problem": "Customers need to know what to check before requesting a replacement quote.",
+  "objective": "Prompt a qualified inquiry rather than promise a guaranteed result.",
+  "offer": "Request an assessment; price and availability require confirmation.",
+  "source_check": "Demo only. Technical specifications, qualifications, installation promises and prices require company verification.",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 5,
+      "narration": "Heating system due for replacement? Start with a few practical checks.",
+      "on_screen_text": "Before replacing a boiler",
+      "visual_direction": "Existing unit and installation-space wide shot",
+      "asset_key": "demo_intro"
+    },
+    {
+      "start_sec": 5,
+      "end_sec": 13,
+      "narration": "Check installation space, service needs, and model specifications.",
+      "on_screen_text": "Space · Service · Specifications",
+      "visual_direction": "Three labeled shots; do not invent features",
+      "asset_key": "demo_checks"
+    },
+    {
+      "start_sec": 13,
+      "end_sec": 20,
+      "narration": "Ask for a tailored assessment before choosing a model.",
+      "on_screen_text": "Request an assessment",
+      "visual_direction": "Approved store or consultation image",
+      "asset_key": "demo_cta"
+    }
+  ]
+}
